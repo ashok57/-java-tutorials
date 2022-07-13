@@ -1,0 +1,9 @@
+// ternary operator:
+public class OperatorClass{
+    public static void main(String args[] ){
+        int a = 21;
+        int b= 5;
+        int min = (a<b)?a:b;
+        System.out.println(min);
+    }
+}
