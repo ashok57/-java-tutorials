@@ -1,0 +1,25 @@
+if(condition 1) {    
+statement 1; //executes when condition 1 is true   
+}  
+else if(condition 2) {  
+statement 2; //executes when condition 2 is true   
+}  
+else {  
+statement 2; //executes when all the conditions are false   
+}  
+
+//eg:
+public class Student{
+    public static void main(String args[]){
+        String city = "Delhi";
+        if(city == "Meerut"){
+            System.out.println("city is Meerut");
+        }else if(city == "Noida"){
+            System.out.println("city is noida");
+        }else if(city == "Agra"){
+            System.out.println("City is agra");
+        } else{
+            System.out.println(city);
+        }
+    }
+}
