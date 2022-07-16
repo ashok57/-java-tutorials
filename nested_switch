@@ -1,0 +1,53 @@
+//java program to demonstrate the use of java nested switch:
+import java.util.*;
+public class NestedSwitchExample{
+    public static void main(String args[]){
+        char branch = 'C';
+        int collegeYear = 4;
+        switch(collegeYear){
+            case 1:
+                System.out.println("English , maths , Science");
+                break;
+                case 2:
+                    switch(branch){
+                        case 'C':
+                            System.out.println("operatin System, java, data structure");
+                            break;
+                        case 'E':
+                            System.out.println("Micro processors, logic switching theory");
+                            break;
+                        case 'M':
+                            System.out.println("Drawing , MAnufacturing Machines");
+                            break;
+                    }
+                    break;
+                    case 3:
+                        switch(branch){
+                            case 'C':
+                                System.out.println("Computer Organisation , Multimedia");
+                                break;
+                            case 'E':
+                            System.out.println("fundamental of logic design, microelectronics");
+                            break;
+                            case 'M':
+                                System.out.println("Internal combustion engines, Mechanical Vibration");
+                                break;
+                        }
+                        break;
+                        case 4:
+                            switch(branch){
+                                case 'C':
+                                    System.out.println("Data Communication and Networks, Multimedia");
+                                    break;
+                                case 'E':
+                                    System.out.println("Embedded System, Image Processing");
+                                    break;
+                                case 'M':
+                                    System.out.println("Production Technology, Thermal Engineering");
+                                    break;
+                            }
+                            break;      
+                    
+        }
+    }
+}
