@@ -1,0 +1,8 @@
+public class ForEachExample{
+    public static void main(String args[]){
+        int arr[] = {12,23,5,48,89};
+        for(int i: arr){
+            System.out.println(i);
+        }
+    }
+}
