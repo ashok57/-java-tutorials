@@ -1,0 +1,27 @@
+//static variable
+class Student6 {
+	int rollno;
+	String name;
+	static String college = "GLA";
+
+	Student6(int r, String n) {
+		rollno = r;
+		name = n;
+	}
+
+	void dislay() {
+		System.out.println(rollno + " " + name + " " + college);
+	}
+
+	public class TestStaticVariable {
+		public static void main(String[] args) {
+			Student6 s1 = new Student6(111, "Karan");
+			Student6 s2 = new Student6(222, "Aryan");
+			Student6.college = "nsit";
+			s1.dislay();
+			s2.dislay();
+		}
+
+	}
+
+}
