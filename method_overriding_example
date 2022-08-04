@@ -1,0 +1,30 @@
+class Bank{
+	int getRateOfIntrest(){
+		return 0;
+	}
+}
+class SBI extends Bank{
+	int getRateOfIntrest(){
+		return 8;
+	}
+}
+class ICICI extends Bank {
+	int getRateOfIntrest(){
+		return 7;
+	}
+}
+class AXIS extends Bank{
+	int getRateOfIntrest(){
+		return 9;
+	}
+}
+class Test{
+	public static void main(String[] args) {
+		SBI s = new SBI();
+		ICICI i = new ICICI();
+		AXIS a = new AXIS();
+		System.out.println("SBI Rate Of Intrest:"+s.getRateOfIntrest());
+		System.out.println("ICICI Rate Of Intrest:"+i.getRateOfIntrest());
+		System.out.print("AXIS Rate Of Intrest:"+ a.getRateOfIntrest());
+	}
+}
