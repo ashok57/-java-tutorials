@@ -1,0 +1,33 @@
+class Bank{
+	float getRateOfIntrest(){
+		return 0;
+	}
+}
+class SBI extends Bank{
+	float getRateOfIntrest(){
+		return 8.5f;
+	}
+}
+class ICICI extends Bank{
+	float getRateOfIntrest(){
+		return 7.3f;
+	}
+}
+class AXIS extends Bank{
+	float getRateOfIntrest(){
+		return 9.7f;
+	}
+}
+class TestPolymorphism{
+	public static void main(String[] args) {
+		Bank b;
+		b = new SBI();
+			System.out.println("SBI :" +b.getRateOfIntrest());
+		b =  new ICICI();
+			System.out.println("ICICI: " +b.getRateOfIntrest());
+		b = new AXIS();
+			System.out.println("AXIS: " + b.getRateOfIntrest());
+		
+
+	}
+}
