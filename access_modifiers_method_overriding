@@ -1,0 +1,16 @@
+class A {
+	protected void msg() {
+		System.out.println("Hello");
+	}
+}
+
+public class Simple extends A {
+	void msg() {
+		System.out.println("Hello Java");
+	}
+
+	public static void main(String[] args) {
+		Simple obj = new Simple();
+		obj.msg();
+	}
+}
