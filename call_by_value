@@ -1,0 +1,17 @@
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
+
+public class Recursion {
+	int data = 50;
+
+	void change(Recursion rc) {
+		rc.data += 100;
+	}
+
+	public static void main(String[] args) {
+		Recursion rc = new Recursion();
+		System.out.println("before change: " + rc.data);
+		rc.change(rc);
+		System.out.println("after change:" + rc.data);
+
+	}
+}
